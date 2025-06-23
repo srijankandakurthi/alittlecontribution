@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A Little Contribution</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>A Little Contribution</h1>
+    <nav>
+      <button onclick="showPage('home')">Home</button>
+      <button onclick="showPage('login')">Admin Login</button>
+      <button onclick="showPage('donation')">Donate</button>
+      <button onclick="showPage('contact')">Contact</button>
+      <button onclick="logout()" id="logoutBtn" class="hidden">Logout</button>
+    </nav>
+  </header>
+
+  <!-- Main Pages -->
+  <main>
+    <!-- Home Page -->
+    <section id="homePage">
+      <h2>Welcome to A Little Contribution</h2>
+      <p>This is a sample coded clone of an NGO site with Admin Panel using HTML, CSS, JS.</p>
+    </section>
+
+    <!-- Login Page -->
+    <section id="loginPage" class="hidden">
+      <h2>Admin Login</h2>
+      <form id="loginForm">
+        <label>Email<input type="email" name="email" required></label>
+        <label>Password<input type="password" name="password" required></label>
+        <button type="submit">Login</button>
+        <p id="errorMsg"></p>
+      </form>
+    </section>
+
+    <!-- Dashboard Page -->
+    <section id="dashboardPage" class="hidden">
+      <h2>Admin Dashboard</h2>
+      <div id="cardsContainer"></div>
+    </section>
+
+    <!-- Donation Page -->
+    <section id="donationPage" class="hidden">
+      <h2>Support Our Cause</h2>
+      <form id="donationForm">
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Amount (INR)<input type="number" name="amount" required></label>
+        <button type="submit">Donate</button>
+        <p id="donationMsg"></p>
+      </form>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contactPage" class="hidden">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Message<textarea name="message" required></textarea></label>
+        <button type="submit">Send</button>
+        <p id="contactMsg"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 A Little Contribution
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
